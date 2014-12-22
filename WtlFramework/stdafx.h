@@ -33,7 +33,7 @@ extern CAppModule _Module;
 #pragma message("to save private data in xml file instead of regestry uncoment this")
 //#define STORE_PRIVATE_DATA_IN_XML
 #pragma message("to add/remove auto-hiding features just add/remove #include <DWAutoHide.h>")
-#include <DWAutoHide.h>
+//#include <DWAutoHide.h>
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 

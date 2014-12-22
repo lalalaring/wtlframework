@@ -147,16 +147,16 @@ public:
 		// create command bar window
 		HWND hWndCmdBar = m_CmdBar.Create(m_hWnd, rcDefault, NULL, ATL_SIMPLE_CMDBAR_PANE_STYLE);
 		// attach menu
-		m_CmdBar.AttachMenu(GetMenu());
+		//m_CmdBar.AttachMenu(GetMenu());
 		// load command bar images
-		m_CmdBar.LoadImages(IDR_MAINFRAME);
+		//m_CmdBar.LoadImages(IDR_MAINFRAME);
 		// remove old menu
-		SetMenu(NULL);
+		SetMenu(GetMenu());
 
 		HWND hWndToolBar = CreateSimpleToolBarCtrl(m_hWnd, IDR_MAINFRAME, FALSE, ATL_SIMPLE_TOOLBAR_PANE_STYLE);
 
 		CreateSimpleReBar(ATL_SIMPLE_REBAR_NOBORDER_STYLE);
-		AddSimpleReBarBand(hWndCmdBar);
+		//AddSimpleReBarBand(hWndCmdBar);
 		AddSimpleReBarBand(hWndToolBar, NULL, TRUE);
 
 		CreateSimpleStatusBar();
